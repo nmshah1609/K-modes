@@ -7,14 +7,14 @@ Algorithm: k-modes(dataset, numOfClusters)
 Input: Data, k
 Output: Cj where 1 <= j <= k
 
--Step 1: Randomly select the K initial cluster centers such that Cj, j = 1,2,...,K
--Step 2: Find the matching dissimilarity between the each K initial cluster modes and each data objects using the minizing cost function TD(C,m)
--Step 3: Evaluate the fitness using the dissimilarity distance function (Hamming distance)
--Step 4: Find the minimum mode values in each data object i.e. finding the objects nearest to the initial cluster modes.
--Step 5: Assign the data objects to the nearest cluster modes.
--Step 6: Update the modes by applying the frequency based method on newly formed clusters
--Step 7: Recalculate the similarity between the objects and the updated modes 
--Step 8: Repeat step 4 - 5 until no changes in the cluster ship of the objects
+* Step 1: Randomly select the K initial cluster centers such that Cj, j = 1,2,...,K
+* Step 2: Find the matching dissimilarity between the each K initial cluster modes and each data objects using the minizing cost function TD(C,m)
+* Step 3: Evaluate the fitness using the dissimilarity distance function (Hamming distance)
+* Step 4: Find the minimum mode values in each data object i.e. finding the objects nearest to the initial cluster modes.
+* Step 5: Assign the data objects to the nearest cluster modes.
+* Step 6: Update the modes by applying the frequency based method on newly formed clusters
+* Step 7: Recalculate the similarity between the objects and the updated modes 
+* Step 8: Repeat step 4 - 5 until no changes in the cluster ship of the objects
 
 Psuedocode:
 
