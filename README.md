@@ -48,10 +48,11 @@ FOR i from 0 to range of n do
 	minDist <- intialize with some large value
     FOR j from 0 to k do
 	    Calculate the distance between ith data point and jth mode vector using dissimilarity distance function 
-	    and assign that data point to appropriate cluster whose cluster mode vector is closer to it and update mode vector of corresponding cluster and also find the
-	    distribution of mode categories between clusters
+	    and assign that data point to appropriate cluster whose cluster mode vector is closer to it and update
+	    mode vector of corresponding cluster and also find the distribution of mode categories between clusters
 	    
 	dist <- get_distance(C[row index, features], X[row index, features])
+	
         IF dist < minDist do
             minDist <- dist
             clustNum <- j
@@ -70,9 +71,9 @@ WHILE c1 is not equal to c do
 	FOR i from 0 to range of n do  
 	minDist <- intialize with some large value
 	    FOR j from 0 to k do
-		    Calculate the distance between ith data point and jth mode vector using dissimilarity distance function (6) and assign that
-		    data point to appropriate cluster whose cluster mode vector is closer to it and update mode vector of corresponding cluster
-		    and also find the distribution of mode categories between clusters 
+		    Calculate the distance between ith data point and jth mode vector using dissimilarity distance
+		    function (6) and assign that data point to appropriate cluster whose cluster mode vector is closer
+		    to it and update mode vector of corresponding cluster and also find the distribution of mode categories between clusters 
 		    
 		dist <- get_distance(C[row index, features], X[row index, features])
 		
