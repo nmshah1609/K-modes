@@ -3,9 +3,10 @@ Implementation of k-modes algorithm from scratch
 
 
 Code outline:
+
 Algorithm: k-modes(dataset, numOfClusters)
-Input: Data, k
-Output: Cj where 1 <= j <= k
+> Input: Data, k
+> Output: Cj where 1 <= j <= k
 
 * Step 1: Randomly select the K initial cluster centers such that Cj, j = 1,2,...,K
 * Step 2: Find the matching dissimilarity between the each K initial cluster modes and each data objects using the minizing cost function TD(C,m)
@@ -19,12 +20,12 @@ Output: Cj where 1 <= j <= k
 Psuedocode:
 
 key:
-k = numOfClusters
-X = data
+> k = numOfClusters
+> X = data
 
 Algorithm: get_distance(x, c)
-Input: numOfClusters, sizeOfDataset
-Output: distance
+> Input: numOfClusters, sizeOfDataset
+> Output: distance
 ```
 dist <- 0
 IF x is not equal to c do
@@ -33,8 +34,8 @@ IF x is not equal to c do
 
 
 Algorithm: kmodes(dataset, numOfClusters)
-Input: X, k
-Output: Cj where 1 <= j <= k
+> Input: X, k
+> Output: Cj where 1 <= j <= k
 ```
 C1 <- empty array
 Randomly select k cluster centres from X with n objects
